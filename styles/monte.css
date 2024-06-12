@@ -1,0 +1,88 @@
+:root{
+    --branco:  #b8b4b4;
+    --vermelho: #753430;
+    --rgb: rgb(1 1 1);
+    --azul: #2c3e50;
+    --preto: #000;
+    --menosPreto: #0c0c0c;
+    --cinza: #333;
+    --laranja: rgb(228, 107, 8);
+    --Menoslaranja: rgba(180, 62, 62, 0.993);
+    --rgb2: rgb(44 43 43 / 60%);
+}
+header{
+    background-color: var(--preto);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--menosPreto);
+    color: var(--cinza);
+    background-image: url('../images/pizza.jpg');
+    background-size: contain; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nome h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+    margin-bottom: 10px;
+    font: normal 50pt Impact;
+    opacity: 100%;
+    text-shadow: 6px 2px 1px var(--rgb2);
+}
+.container {
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+    align-items: column;
+    font: normal 15pt Garamond;
+}
+
+h2 {
+    text-align: center;
+    color: var(--cinza);
+    font: normal 15pt Garamond;
+    
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--preto);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background-color: var(--Menoslaranja);
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 356px) {
+    .container {
+        width: 70%;
+    }
+}
