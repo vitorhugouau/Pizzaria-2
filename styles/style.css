@@ -1,0 +1,182 @@
+:root{
+    --branco:  #fff;
+    --vermelho: #753430;
+    --rgb: rgb(1 1 1);
+    --azul: #2c3e50;
+    --preto: #000;
+    --menosPreto: #0c0c0c;
+    --cinza: #333;
+    --laranja: rgb(228, 107, 8);
+    --Menoslaranja: rgba(180, 62, 62, 0.993);
+    --rgb2: rgb(29 16 16 / 60%);
+}
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+header{
+    background-color: var(--preto);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--menosPreto);
+    color: var(--cinza);
+    margin: 0;
+    background-image: url('/images/pizza.jpg');
+    background-size: contain;
+}
+
+.nome h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+    margin-bottom: 10px;
+    font: normal 50pt Impact;
+    opacity: 100%;
+    text-shadow: 6px 2px 1px var(--rgb2);
+}
+
+.monte {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.monte a h5 {
+    background-color: var(--rgb);
+    color: var(--branco);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.4s ease;
+
+}
+
+.monte a h5:hover {
+    transform: scale(1.2);
+}
+
+
+.table {
+    width: 72%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+   
+}
+
+.table thead {
+    background-color: #00000094;
+    color: var(--laranja);
+    font-size: 1.5em;
+    font: normal 30pt Impact;
+    opacity: 100%;
+    
+}
+
+.table thead td {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid var(--preto);
+    
+}
+
+.table tbody tr {
+    background-color: var(--vermelho);
+    opacity: 100%;
+    transition: background-color 0.2s;
+    border-bottom: 1px solid var(--preto);
+}
+.table tbody tr td{
+    border-bottom: 1px solid var(--preto);
+}
+.table tbody tr:hover {
+    background-color: var(--Menoslaranja);
+}
+
+.table td {
+    padding: 18px;
+    text-align: center;
+    font: normal 15pt Garamond;
+    color: var(--branco)
+    
+}
+
+.table a {
+    background-color: var(--rgb);
+    color: var(--branco);
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.table a:hover {
+     transform: scale(1.2);
+}
+
+h1 {
+    text-align: center;
+    /* margin-top: 40px; */
+    margin-bottom: 20px;
+    font: normal 55pt Impact;
+    opacity: 100%;
+    text-shadow: 6px 4px 3px rgba(0,0,0,0.6);
+
+}
+
+
+ul{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+li {
+    list-style-type: none;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: var(--branco);
+    list-style: none;
+    font: normal 40pt Impact;
+    opacity: 100%;
+    text-shadow: 6px 4px 3px rgba(247, 242, 242, 0.6);
+}
+
+
+
+@media (max-width: 668px) {
+    .table tbody tr td {
+        font-size: 16px;
+    }
+
+    .ing {
+        display: none;
+    }
+
+    .txt-baixo {
+        font-size: 32px;
+    }
+
+    .li {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 464px) {
+    .vlr {
+        display: none;
+    }
+
+    .txt-baixo {
+        font-size: 20px;
+    }
+
+    .li {
+        font-size: 18px;
+    }
+}

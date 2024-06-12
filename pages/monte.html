@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montar sua Pizza</title>
+    <link rel="stylesheet" href="/styles/monte.css">
+</head>
+<header class="titulo">
+    <div class="nome">
+        <h1>MONTE SUA PIZZA</h1>
+    </div>
+</header>
+<body>
+    <div class="container">  
+        <form id="pizzaForm" action="/pages/pagamento.html">
+            <div class="section">
+                <h2>MOLHO</h2>
+                <label>
+                    <input type="radio" name="molho" value="Tomate" checked>
+                    Molho de Tomate
+                </label>
+                <label>
+                    <input type="radio" name="molho" value="Branco">
+                    Molho Branco
+                </label>
+            </div>
+            <div class="section">
+                <h2>QUEIJO</h2>
+                <label>
+                    <input type="checkbox" name="queijo" value="Mozzarella" >
+                    Mozzarella
+                </label>
+                <label>
+                    <input type="checkbox" name="queijo" value="Parmesão"  >
+                    Parmesão
+                </label>
+                <label>
+                    <input type="checkbox" name="queijo" value="Gorgonzola" >
+                    Gorgonzola
+                </label>
+                <label>
+                    <input type="checkbox" name="queijo" value="Provolone" >
+                    Provolone
+                </label>
+            </div>
+            <div class="section">
+                <h2>INGREDIENTES</h2>
+                <label>
+                    <input type="checkbox" name="ingredientes" value="Pepperoni">
+                    Pepperoni
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredientes" value="Calabresa">
+                    Calabresa
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredientes" value="Frango">
+                    Frango
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredientes" value="Camarão">
+                    Camarão
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredientes" value="Milho">
+                    Milho
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredientes" value="Azeitonas">
+                    Azeitonas
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredientes" value="Cebola">
+                    Cebola
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredientes" value="Pimentão">
+                    Pimentão
+                </label>
+                <label>
+                    <input type="checkbox" name="ingredientes" value="Manjericão">
+                    Manjericão
+                </label>
+                
+            </div>
+            <div class="section">
+                <h2>Borda Recheada</h2>
+                <label>
+                    <input type="radio" name="ingredientes" value="SIM">
+                    Sim
+                </label>
+                <label>
+                    <input type="radio" name="ingredientes" id="NÃO">
+                    Não
+                </label>
+            </div>
+            <button type="submit">COMPRAR</button>
+        </form>
+    </div>
+</body>
+</html>
